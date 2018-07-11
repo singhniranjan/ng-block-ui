@@ -2,6 +2,8 @@
  * A BlockUI instance
  */
 export interface NgBlockUI {
+    [key: string]: any;
+
     /**
      * BlockUI instance name
      */
@@ -11,6 +13,11 @@ export interface NgBlockUI {
      * Is BlockUI instance active
      */
     isActive: boolean;
+
+    /**
+     * Number of start method calls for instance
+     */
+    blockCount: number;
 
     /**
      * Starts blocking for BlockUI instance
